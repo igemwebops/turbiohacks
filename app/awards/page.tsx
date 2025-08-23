@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import styles from "./Awards.module.css";
 
 export const metadata: Metadata = {
-  title: "Awards | TurBioHacks 2025",
-  description: "Hackathon awards and recognition for TurBioHacks 2025",
+  title: "TurBioHacks Awards 2025",   // 👈 This is what shows up on the browser tab
+  description: "Celebrating innovation, impact, and creativity at TurBioHacks 2025",
 };
 
 type Award = { title: string; desc: string };
@@ -84,3 +84,4 @@ export default function AwardsPage() {
     </div>
   );
 }
+
