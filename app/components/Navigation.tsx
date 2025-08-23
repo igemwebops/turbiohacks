@@ -1,35 +1,36 @@
 'use client';
 
-export default function Navigation() {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    element?.scrollIntoView({ behavior: 'smooth' });
-  };
+import Link from 'next/link';
 
+export default function Navigation() {
   return (
     <nav className="navigation">
       <div className="nav-container">
         <div className="nav-links">
-          <button onClick={() => scrollToSection('about')} className="nav-link">
+          <Link href="/#about" className="nav-link">
             ABOUT
-          </button>
-          <button onClick={() => scrollToSection('tracks')} className="nav-link">
+          </Link>
+          <Link href="/#tracks" className="nav-link">
             TRACKS
-          </button>
-          <button onClick={() => scrollToSection('schedule')} className="nav-link">
+          </Link>
+          <Link href="/#schedule" className="nav-link">
             SCHEDULE
-          </button>
-          <button onClick={() => scrollToSection('educational-material')} className="nav-link">
+          </Link>
+          <Link href="/#educational-material" className="nav-link">
             EDUCATIONAL MATERIAL
-          </button>
-          <button onClick={() => scrollToSection('faq')} className="nav-link">
+          </Link>
+          <Link href="/#faq" className="nav-link">
             FAQ
-          </button>
-          <button onClick={() => scrollToSection('sponsors')} className="nav-link">
+          </Link>
+          <Link href="/#sponsors" className="nav-link">
             SPONSORS
-          </button>
+          </Link>
+          <Link href="/awards" className="nav-link">
+            AWARDS
+          </Link>
         </div>
       </div>
     </nav>
   );
 }
+
