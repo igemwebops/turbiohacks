@@ -5,23 +5,43 @@ export default function Tracks() {
     { 
       name: 'ONCOLOGY', 
       color: '#FF69B4',
-      description: 'Develop innovative solutions for cancer research, diagnosis, and treatment using cutting-edge biotechnology.'
+      description: 'This track addresses the urgent need for better cancer detection and treatment. Projects may focus on modeling tumor progression, identifying biomarkers, or designing novel therapeutic interventions with measurable clinical relevance.'
     },
     { 
       name: 'FOOD AND NUTRITION', 
       color: '#9370DB',
-      description: 'Create sustainable food systems and nutritional solutions to address global food security challenges.'
+      description: 'Global food systems face pressure from climate, health, and sustainability demands. This track emphasizes innovations in alternative proteins, microbiome-informed nutrition, and sustainable agricultural practices.'
     },
     { 
-      name: 'BIO MANUFACTURING', 
+      name: 'BIOMANUFACTURING', 
       color: '#8A2BE2',
-      description: 'Design scalable bio-manufacturing processes for sustainable production of biologics and biomaterials.'
+      description: 'Biomanufacturing leverages cells and enzymes as production platforms. Teams will develop methods to improve yield, reduce cost, or expand the product space of biologically manufactured medicines, fuels, or materials.'
     },
     { 
       name: 'THERAPEUTICS', 
       color: '#FF1493',
-      description: 'Engineer novel therapeutic approaches including gene therapy, drug delivery, and personalized medicine.'
-    }
+      description: 'Therapeutics are rapidly evolving beyond small molecules. This track highlights RNA-based interventions, engineered immune cells, and synthetic circuits as next-generation approaches to disease treatment.'
+    },
+    { 
+      name: 'Drug Discovery', 
+      color: '#FF69B4',
+      description: 'Drug discovery remains constrained by cost and inefficiency. This track challenges participants to design algorithms, models, or biological systems that accelerate target identification, optimize lead compounds, or improve preclinical validation.'
+    },
+    { 
+      name: 'Environment', 
+      color: '#FF69B4',
+      description: 'Environmental challenges demand scalable biological solutions. Projects in this track may address pollution remediation, biodiversity loss, or climate mitigation through engineered organisms and ecosystems.'
+    },
+    { 
+      name: 'Diagnostics', 
+      color: '#FF69B4',
+      description: 'Diagnostics define the boundary between prevention and treatment. This track centers on building biosensors, computational classifiers, and rapid detection tools that enable earlier and more accurate decision-making.'
+    },
+    { 
+      name: 'Astrobiology', 
+      color: '#FF69B4',
+      description: 'Astrobiology examines how life originates, adapts, and persists in extreme conditions. Teams in this track will explore synthetic biology and computational approaches to test life’s boundaries and inform future space exploration.'
+    },
   ];
 
   return (
