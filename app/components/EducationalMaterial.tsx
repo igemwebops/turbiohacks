@@ -6,6 +6,11 @@ export default function EducationalMaterial() {
     { name: 'FOOD AND NUTRITION', color: '#5CB3CC' },
     { name: 'ONCOLOGY', color: '#6B73FF' },
     { name: 'THERAPEUTICS', color: '#9B59B6' }
+    { name: 'ASTROBIOLOGY', color: '#4A90E2' },
+    { name: 'DIAGNOSTISC', color: '#5CB3CC' },
+    { name: 'NEUROSCIENCE', color: '#6B73FF' },
+    { name: 'DRUG DISCOVERY', color: '#9B59B6' }
+    { name: 'ENVIRONMENT', color: '#4A90E2' },
   ];
 
   return (
