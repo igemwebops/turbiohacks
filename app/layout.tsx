@@ -12,11 +12,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// 👇 Global metadata applies to the homepage and any page
+// that doesn’t override with its own metadata
 export const metadata: Metadata = {
-  title: "TurBioHacks 2025",   // ← shows up on browser tab
-  description: "Think. Test. Launch",
+  title: "TurBioHacks 2025",
+  description: "International synthetic biology hackathon | September 6–7, 2025",
 };
-
 
 export default function RootLayout({
   children,
