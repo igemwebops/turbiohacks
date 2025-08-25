@@ -21,22 +21,22 @@ export default function Tracks() {
       description: 'Therapeutics are rapidly evolving beyond small molecules. This track highlights RNA-based interventions, engineered immune cells, and synthetic circuits as next-generation approaches to disease treatment.'
     },
     { 
-      name: 'Drug Discovery', 
+      name: 'DRUG DISCOVERY', 
       color: '#FF69B4',
       description: 'Drug discovery remains constrained by cost and inefficiency. This track challenges participants to design algorithms, models, or biological systems that accelerate target identification, optimize lead compounds, or improve preclinical validation.'
     },
     { 
-      name: 'Environment', 
+      name: 'ENVIRONMENT', 
       color: '#FF69B4',
       description: 'Environmental challenges demand scalable biological solutions. Projects in this track may address pollution remediation, biodiversity loss, or climate mitigation through engineered organisms and ecosystems.'
     },
     { 
-      name: 'Diagnostics', 
+      name: 'DIAGNOSTICS', 
       color: '#FF69B4',
       description: 'Diagnostics define the boundary between prevention and treatment. This track centers on building biosensors, computational classifiers, and rapid detection tools that enable earlier and more accurate decision-making.'
     },
     { 
-      name: 'Astrobiology', 
+      name: 'ASTROBIOLOGU', 
       color: '#FF69B4',
       description: 'Astrobiology examines how life originates, adapts, and persists in extreme conditions. Teams in this track will explore synthetic biology and computational approaches to test life boundaries and inform future space exploration.'
     },
