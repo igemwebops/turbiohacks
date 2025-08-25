@@ -1,91 +1,93 @@
-.header {
-  display: grid;
-  gap: 8px;
-  text-align: center;
-}
+export default function Awards() {
+  const awards = [
+    { 
+      category: 'Track Awards', 
+      items: [
+        {
+          name: 'Best Astrobiology Project',
+          description: 'Recognizing innovative projects exploring life in extreme conditions and space exploration applications'
+        },
+        {
+          name: 'Best Oncology Project', 
+          description: 'Honoring breakthrough solutions in cancer detection, treatment, and research methodologies'
+        },
+        {
+          name: 'Best Drug Discovery Project',
+          description: 'Celebrating novel approaches to pharmaceutical research and therapeutic compound development'
+        },
+        {
+          name: 'Best Environment Project',
+          description: 'Acknowledging impactful solutions for environmental challenges and sustainability'
+        },
+        {
+          name: 'Best Therapeutics Project',
+          description: 'Rewarding innovative therapeutic interventions and treatment delivery systems'
+        },
+        {
+          name: 'Best Diagnostics Project',
+          description: 'Recognizing advanced diagnostic tools and early detection methodologies'
+        },
+        {
+          name: 'Best Food & Nutrition Project',
+          description: 'Honoring solutions in food security, nutrition optimization, and sustainable agriculture'
+        },
+        {
+          name: 'Best Biomanufacturing Project',
+          description: 'Celebrating efficient biological production systems and sustainable manufacturing processes'
+        },
+        {
+          name: 'Best Neuroscience Project',
+          description: 'Recognizing innovative approaches to understanding brain function and neurological disorders'
+        }
+      ]
+    },
+    { 
+      category: 'Cross‑Track Awards', 
+      items: [
+        {
+          name: 'Best Overall Project',
+          description: 'The most outstanding project across all tracks, demonstrating exceptional innovation and impact'
+        },
+        {
+          name: 'Most Innovative Solution',
+          description: 'Recognizing the most creative and groundbreaking approach to solving complex problems'
+        },
+        {
+          name: 'Best Impact Potential',
+          description: 'Honoring projects with the greatest potential for real-world positive impact'
+        },
+        {
+          name: 'Best Technical Implementation',
+          description: 'Celebrating superior technical execution, code quality, and implementation excellence'
+        }
+      ]
+    }
+  ];
 
-.title {
-  font-size: clamp(28px, 4vw, 40px);
-  margin: 0;
-  letter-spacing: -0.01em;
-  color: rgba(var(--gray-rgb), 0.95);
-}
-
-.subtitle {
-  margin: 0;
-  color: rgba(var(--gray-rgb), 0.75);
-  font-size: 14px;
-  line-height: 22px;
-}
-
-/* Section layout */
-.section {
-  display: grid;
-  gap: 16px;
-  justify-items: center; /* center the grid within the section */
-}
-
-.sectionTitle {
-  font-size: 18px;
-  letter-spacing: -0.01em;
-  margin: 0;
-  padding-bottom: 6px;
-  border-bottom: 1px solid var(--gray-alpha-200);
-  color: rgba(var(--gray-rgb), 0.9);
-}
-
-/* Grid + centering each card */
-.grid {
-  --col-min: 260px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  gap: 16px;
-  grid-template-columns: repeat(auto-fill, minmax(var(--col-min), 1fr));
-  width: 100%;
-  max-width: 1100px;          /* keeps grid from stretching too wide */
-  justify-items: stretch;     /* cards fill their grid cell */
-}
-
-/* Card styling + guaranteed text color */
-.card {
-  background: var(--background);
-  border: 1px solid var(--gray-alpha-200);
-  border-radius: 14px;
-  padding: 16px;
-  box-shadow: 0 2px 10px var(--gray-alpha-100);
-  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
-  color: rgba(var(--gray-rgb), 0.92);  /* ensure text is visible in both themes */
-}
-
-.card * {
-  color: inherit; /* inherit the visible color for all children */
-}
-
-.cardTitle {
-  margin: 0 0 6px 0;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.cardDesc {
-  margin: 0;
-  font-size: 14px;
-  line-height: 22px;
-  opacity: 0.9;
-}
-
-/* Hover on desktops */
-@media (hover: hover) and (pointer: fine) {
-  .card:hover {
-    transform: translateY(-2px);
-    border-color: var(--button-secondary-hover);
-    box-shadow: 0 6px 24px var(--gray-alpha-100);
-  }
-}
-
-/* Small screens */
-@media (max-width: 600px) {
-  .grid { --col-min: 200px; }
+  return (
+    <section className="awards" id="awards">
+      <div className="section-container">
+        <div className="section-header">
+          <img src="/grey_planet.webp" alt="Grey planet" width={80} height={80} className="planet-icon" />
+          <h2 className="section-title">AWARDS</h2>
+        </div>
+        
+        <div className="awards-content">
+          {awards.map((section, sectionIndex) => (
+            <div key={sectionIndex} className="award-category">
+              <h3 className="award-category-title">{section.category}</h3>
+              <div className="awards-grid">
+                {section.items.map((award, index) => (
+                  <div key={index} className="award-card">
+                    <h4 className="award-title">{award.name}</h4>
+                    <div className="award-description">{award.description}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }
