@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 export default function Tracks() {
   const tracks = [
     { 
@@ -40,15 +38,20 @@ export default function Tracks() {
     { 
       name: 'Astrobiology', 
       color: '#FF69B4',
-      description: 'Astrobiology examines how life originates, adapts, and persists in extreme conditions. Teams in this track will explore synthetic biology and computational approaches to test life’s boundaries and inform future space exploration.'
+      description: 'Astrobiology examines how life originates, adapts, and persists in extreme conditions. Teams in this track will explore synthetic biology and computational approaches to test life boundaries and inform future space exploration.'
     },
+    { 
+      name: 'NEUROSCIENCE', 
+      color: '#6B73FF',
+      description: 'Neuroscience explores the complexities of the brain and nervous system. This track focuses on neural circuit modeling, brain-computer interfaces, neurological disorder research, and computational approaches to understanding cognition and behavior.'
+    }
   ];
 
   return (
     <section className="tracks" id="tracks">
       <div className="section-container">
         <div className="section-header">
-          <Image
+          <img
             src="/blue_planet.webp"
             alt="Blue planet"
             width={80}
