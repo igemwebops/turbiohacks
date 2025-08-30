@@ -16,24 +16,24 @@ export default function Schedule() {
       description: 'Official announcement and registration opens'
     },
     {
-      date: 'August 31',
+      date: 'September 4',
       title: 'Registration Deadline',
       description: 'Last day to register for the hackathon'
     },
     {
       date: 'September 5',
-      title: 'Hackathon Start',
-      description: 'Competition begins with opening ceremony'
+      title: 'Hackathon Day 1',
+      description: 'Opening, Workshops, Guest Speeches'
     },
     {
-      date: 'September 7',
-      title: 'Hackathon End',
-      description: 'Final submissions and presentations'
+      date: 'September 6-7',
+      title: 'Hacking Period',
+      description: 'Final submissions on Devpost by 9/7 12:00 UTC!'
     },
     {
       date: 'September 9',
       title: 'Result Declaration',
-      description: 'Winners announcement and closing ceremony'
+      description: 'Winners announcement'
     }
   ];
 
