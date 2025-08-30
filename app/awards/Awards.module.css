@@ -16,10 +16,6 @@ export default function Awards() {
           description: 'Celebrating novel approaches to pharmaceutical research and therapeutic compound development'
         },
         {
-          name: 'Best Environment Project',
-          description: 'Acknowledging impactful solutions for environmental challenges and sustainability'
-        },
-        {
           name: 'Best Biomanufacturing Project',
           description: 'Celebrating efficient biological production systems and sustainable manufacturing processes'
         },
