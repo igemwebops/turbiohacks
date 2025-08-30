@@ -20,18 +20,6 @@ export default function Awards() {
           description: 'Acknowledging impactful solutions for environmental challenges and sustainability'
         },
         {
-          name: 'Best Therapeutics Project',
-          description: 'Rewarding innovative therapeutic interventions and treatment delivery systems'
-        },
-        {
-          name: 'Best Diagnostics Project',
-          description: 'Recognizing advanced diagnostic tools and early detection methodologies'
-        },
-        {
-          name: 'Best Food & Nutrition Project',
-          description: 'Honoring solutions in food security, nutrition optimization, and sustainable agriculture'
-        },
-        {
           name: 'Best Biomanufacturing Project',
           description: 'Celebrating efficient biological production systems and sustainable manufacturing processes'
         },
