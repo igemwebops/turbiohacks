@@ -18,11 +18,11 @@ const faqs = [
   },
   {
     question: "What are the different tracks available?",
-    answer: "We have four main tracks: Oncology, Food and Nutrition, Bio Manufacturing, and Therapeutics. Each track focuses on specific challenges and applications in biotechnology."
+    answer: "We have four main tracks: Astrobiology, Oncology, BioManufacturing, Drug Discovery, and Neuroscience. Each track focuses on specific challenges and applications in biotechnology."
   },
   {
     question: "How long is the hackathon?",
-    answer: "TURBIOHACKS is a multi-day event with intensive workshops, mentoring sessions, and project development time. Check our schedule for detailed timings."
+    answer: "Friday 9/5 will be preparation day with workshops and online lectures, and the hacking period will be from 9/6 00:00 UTC to 9/7 12:00 UTC."
   },
   {
     question: "What resources and support are provided?",
